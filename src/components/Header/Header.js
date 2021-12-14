@@ -7,7 +7,9 @@ function Header() {
         width="5%"
         alt="app-logo"
       />
-      Weather Dashboard
+      <div className="app-title">Weather Dashboard</div>
+      <div className="theme-toggle">Dark/Light</div>
+      <div className="unit-toggle">C/F</div>
     </div>
   );
 }
