@@ -1,15 +1,22 @@
 function LocationInput() {
   return (
     <div className="location-input">
-      <label className="locationInputBox" htmlFor="location">
+      <form>
+        <label className="locationInputLabel" htmlFor="location">
+          <input
+            type="text"
+            className="locationInputBox"
+            placeholder="Find a city using city name or zip code"
+            name="location"
+            id="location"
+          ></input>
+        </label>
         <input
-          type="text"
-          placeholder="city"
-          name="location"
-          id="location"
-        ></input>
-      </label>
-      <button className="locationInputSubmitButton">Submit</button>
+          type="submit"
+          className="locationInputSubmitButton"
+          value="Submit"
+        />
+      </form>
     </div>
   );
 }
