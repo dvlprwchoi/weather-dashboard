@@ -30,20 +30,20 @@ import Footer from './components/Footer/Footer';
 import './App.css';
 // require('dotenv').config();
 
-const WEATHER_API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
-// console.log(WEATHER_API_KEY);
+// const WEATHER_API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+// // console.log(WEATHER_API_KEY);
 
-const weatherLocation = 'austin';
-const forecastDays = 3;
-const airQuality = 'yes';
-const alerts = 'yes';
+// const weatherLocation = 'austin';
+// const forecastDays = 3;
+// const airQuality = 'yes';
+// const alerts = 'yes';
 
-const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${WEATHER_API_KEY}&q=${weatherLocation}&days=${forecastDays}&aqi=${airQuality}&alerts=${alerts}`;
-// console.log(API_URL);
+// const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${WEATHER_API_KEY}&q=${weatherLocation}&days=${forecastDays}&aqi=${airQuality}&alerts=${alerts}`;
+// // console.log(API_URL);
 
-fetch(API_URL)
-  .then((res) => res.json())
-  .then((data) => console.log(data));
+// fetch(API_URL)
+//   .then((res) => res.json())
+//   .then((data) => console.log(data));
 
 function App() {
   return (
