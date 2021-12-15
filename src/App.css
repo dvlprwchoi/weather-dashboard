@@ -63,25 +63,42 @@ body {
 }
 
 .Header {
-  display: flex;
+  /* display: flex; */
   /* flex-direction: column; */
-  align-items: center;
-  /* justify-content: center; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
   min-height: 20vh;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 1fr 10fr 3fr;
 }
 
-.titleAndLogo {
-  display: flex;
-  flex-direction: row;
-  padding-left: 20vw;
+/* .titleAndLogo { */
+/* grid-column: 4; */
+/* display: flex; */
+/* flex-direction: row; */
+/* justify-content: flex-start; */
+/* gap: 3vw; */
+/* align-items: center; */
+/* padding-left: 20vw; */
+/* } */
+
+.toggles {
+  grid-column: 4;
 }
 
 .app-logo {
-  width: 10vw;
+  grid-column: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.app-logo img {
+  width: 5vh;
 }
 
 .app-title {
+  grid-column: 3;
   display: flex;
   justify-content: center;
   align-items: center;

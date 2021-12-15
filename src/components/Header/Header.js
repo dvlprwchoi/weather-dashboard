@@ -1,15 +1,17 @@
 function Header() {
   return (
     <div className="Header">
-      <div className="titleAndLogo">
+      {/* <div className="titleAndLogo"> */}
+      <div className="app-logo">
         <img
-          className="app-logo"
+          // className="app-logo"
           src="./android-chrome-192x192.png"
           // width="15%"
           alt="app-logo"
         />
-        <div className="app-title">Weather Dashboard</div>
       </div>
+      <div className="app-title">Weather Dashboard</div>
+      {/* </div> */}
       <div className="toggles">
         <div className="theme-toggle">D/L</div>
         <div className="unit-toggle">C/F</div>
