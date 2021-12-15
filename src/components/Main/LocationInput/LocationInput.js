@@ -1,25 +1,4 @@
-function LocationInput({ API_URL }) {
-  // fetch(API_URL)
-  //   .then((res) => res.json())
-  //   .then((data) => console.log(data));
-
-  // const locationInput = document.querySelector('#location');
-
-  const _submit = async (e) => {
-    e.preventDefault();
-    console.log('from the event');
-    const zipCode = this.state.value;
-    console.log(zipCode);
-
-    try {
-      const response = await fetch({ API_URL });
-      const data = await response.json();
-      console.log(data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
+function LocationInput({ location, _change, _submit }) {
   return (
     <div className="location-input">
       <form className="locationInputBoxAndSubmitButton" onSubmit={_submit}>
@@ -30,6 +9,9 @@ function LocationInput({ API_URL }) {
             placeholder="Find a city using city name or zip code"
             name="location"
             id="location"
+            required
+            onChange={_change}
+            value={location}
           ></input>
         </label>
         <input
