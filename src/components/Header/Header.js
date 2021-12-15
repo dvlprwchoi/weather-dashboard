@@ -11,7 +11,7 @@ function Header() {
         <div className="app-title">Weather Dashboard</div>
       </div>
       <div className="toggles">
-        <div className="theme-toggle">Dark/Light</div>
+        <div className="theme-toggle">D/L</div>
         <div className="unit-toggle">C/F</div>
       </div>
     </div>

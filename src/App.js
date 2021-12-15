@@ -29,6 +29,17 @@ import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
+const WEATHER_API_KEY = process.env.WEATHER_API_KEY;
+// console.log(WEATHER_API_KEY);
+const weatherLocation = 'austin';
+const forecastDays = 7;
+const airQuality = 'yes';
+const alerts = 'yes';
+
+const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${WEATHER_API_KEY}&q=${weatherLocation}&days=${forecastDays}&aqi=${airQuality}&alerts=${alerts}`;
+
+console.log(API_URL);
+
 function App() {
   return (
     <>

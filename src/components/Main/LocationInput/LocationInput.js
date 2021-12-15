@@ -1,7 +1,7 @@
 function LocationInput() {
   return (
     <div className="location-input">
-      <form>
+      <form className="locationInputBoxAndSubmitButton">
         <label className="locationInputLabel" htmlFor="location">
           <input
             type="text"
