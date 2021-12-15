@@ -194,12 +194,25 @@ form,
   min-height: 10vh;
 }
 
-.portfolio-link {
+.main-footer {
+  margin-top: 0;
+  margin-bottom: 0.5%;
+}
+
+.credit {
+  text-align: end;
+  font-size: calc(5px + 1vmin);
+  margin: 0;
+}
+
+.portfolio-link,
+.credit-link {
   color: #9c6d6d;
   text-decoration: none;
   font-weight: bolder;
 }
 
-.portfolio-link:hover {
+.portfolio-link:hover,
+.credit-link:hover {
   text-decoration: underline;
 }
