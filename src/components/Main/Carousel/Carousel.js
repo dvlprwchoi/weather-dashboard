@@ -1,7 +1,11 @@
-function Carousel() {
+import WeatherDetailCard from '../WeatherDetailCard/WeatherDetailCard';
+
+function Carousel({ weather }) {
   return (
     <div className="carousel">
-      <div className="carousel-background">123456789</div>
+      <div className="carousel-background">
+        <WeatherDetailCard weather={weather} />
+      </div>
     </div>
   );
 }

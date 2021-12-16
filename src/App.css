@@ -37,9 +37,9 @@
   }
 } */
 
-* {
+/* * {
   border: 0.1px solid black;
-}
+} */
 
 body {
   display: flex;
@@ -191,7 +191,20 @@ form,
   width: 80%;
   height: 80%;
   background-color: white;
-  border: 1px solid black;
+  border: 1vw solid #c4c4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-detail-card {
+  width: 45%;
+  border: 1vw solid #9c6d6d;
+  background-color: #9c6d6d7a;
+  color: #3a7758;
+  padding: 1rem;
+  /* width: 50%; */
+  height: 80%;
 }
 
 .Footer {

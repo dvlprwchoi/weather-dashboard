@@ -62,7 +62,7 @@ function Main() {
           _submit={_submit}
         />
         {/* <div className="carousel">1234</div> */}
-        <Carousel />
+        <Carousel weather={weather} />
       </>
     </div>
   );
