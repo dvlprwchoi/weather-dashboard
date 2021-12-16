@@ -41,6 +41,10 @@
   border: 0.1px solid black;
 } */
 
+* {
+  font-family: 'Exo', sans-serif;
+}
+
 body {
   display: flex;
   align-items: center;
