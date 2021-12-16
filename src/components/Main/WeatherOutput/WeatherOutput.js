@@ -23,12 +23,14 @@ function WeatherOutput({ weather }) {
           <div className="weather-icon">
             <img
               className="weather-icon-img"
-              src="./android-chrome-192x192.png"
+              src={weather.current.condition.icon}
               alt="weather-icon-img"
             />
           </div>
           <div className="temperature">
-            <div className="temperature-digit">{weather.current.temp_f}</div>
+            <div className="temperature-digit">
+              {weather.current.temp_f + ' F'}
+            </div>
           </div>
         </div>
       </>
