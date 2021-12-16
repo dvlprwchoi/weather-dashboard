@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Carousel from './Carousel/Carousel';
 import LocationInput from './LocationInput/LocationInput';
+import WeatherOutput from './WeatherOutput/WeatherOutput';
 
 const WEATHER_API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 // console.log(WEATHER_API_KEY);
@@ -28,7 +29,8 @@ function Main() {
       console.error(error);
     }
   }
-  // console.log(weather);
+  // console.log(weather.current.temp_f);
+  // const temp_f = weather.current.temp_f;
 
   function _change(e) {
     setLocation(e.target.value);
@@ -39,10 +41,14 @@ function Main() {
     getWeather(location);
   }
 
+  useEffect(() => {
+    getWeather();
+  }, []);
+
   return (
     <div className="Main">
       <>
-        <div className="weather-icon">
+        {/* <div className="weather-icon">
           <img
             className="weather-icon-img"
             src="./android-chrome-192x192.png"
@@ -50,8 +56,9 @@ function Main() {
           />
         </div>
         <div className="temperature">
-          <div className="temperature-digit">73</div>
-        </div>
+          <div className="temperature-digit">50</div>
+        </div> */}
+        <WeatherOutput weather={weather} />
         {/* <div className="location-input">Austin, TX</div> */}
         <LocationInput
           location={location}
