@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Carousel from './Carousel/Carousel';
 import LocationInput from './LocationInput/LocationInput';
 import WeatherOutput from './WeatherOutput/WeatherOutput';
@@ -22,7 +22,7 @@ function Main() {
     try {
       const response = await fetch(API_URL);
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       setWeather(data);
       // console.log(weather);
     } catch (error) {
@@ -40,10 +40,6 @@ function Main() {
     e.preventDefault();
     getWeather(location);
   }
-
-  useEffect(() => {
-    getWeather();
-  }, []);
 
   return (
     <div className="Main">
