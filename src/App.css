@@ -209,7 +209,8 @@ form,
   align-items: center;
 }
 
-.weather-detail-card {
+.weather-detail-card,
+.no-alert {
   width: 84vw;
   border: 1vw solid #9c6d6d;
   background-color: #9c6d6d7a;
@@ -233,6 +234,24 @@ form,
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+
+.alert {
+  display: grid;
+  width: 84vw;
+  border: 1vw solid #9c6d6d;
+  background-color: #9c6d6d7a;
+  color: #3a7758;
+  padding: 1rem;
+  height: 44vh;
+  font-size: calc(0.7rem);
+}
+
+.alert-headline,
+.alert-effective,
+.alert-expires {
+  font-weight: bolder;
+  font-size: calc(0.8rem);
 }
 
 .Footer {

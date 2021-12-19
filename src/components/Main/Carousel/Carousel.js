@@ -1,5 +1,6 @@
-import Forecast from '../Forecast/Forecast';
 import WeatherDetailCard from '../WeatherDetailCard/WeatherDetailCard';
+import Forecast from '../Forecast/Forecast';
+import Alert from '../Alert/Alert';
 
 function Carousel({ weather, isCelcious }) {
   return (
@@ -21,12 +22,12 @@ function Carousel({ weather, isCelcious }) {
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
-            {/* <button
+            <button
               type="button"
               data-bs-target="#myCarousel"
               data-bs-slide-to="2"
               aria-label="Slide 3"
-            ></button> */}
+            ></button>
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active" data-bs-interval="8000">
@@ -37,6 +38,11 @@ function Carousel({ weather, isCelcious }) {
             <div className="carousel-item" data-bs-interval="8000">
               {/* <div className="container"> */}
               <Forecast weather={weather} isCelcious={isCelcious} />
+              {/* </div> */}
+            </div>
+            <div className="carousel-item" data-bs-interval="8000">
+              {/* <div className="container"> */}
+              <Alert weather={weather} />
               {/* </div> */}
             </div>
           </div>
