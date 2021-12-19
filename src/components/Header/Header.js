@@ -1,4 +1,4 @@
-function Header() {
+function Header({ _themeToggle }) {
   return (
     <div className="Header">
       {/* <div className="titleAndLogo"> */}
@@ -13,7 +13,9 @@ function Header() {
       <div className="app-title">Weather Dashboard</div>
       {/* </div> */}
       <div className="toggles">
-        <div className="theme-toggle">D/L</div>
+        <div className="theme-toggle">
+          <button onClick={_themeToggle}>Theme</button>
+        </div>
         <div className="unit-toggle">C/F</div>
       </div>
     </div>
