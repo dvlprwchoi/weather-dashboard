@@ -6,14 +6,16 @@
   --background-color: rgb(48, 48, 48);
   --color: rgb(211, 209, 209);
   --toggle-button-background-color: #c4c4c4;
-  --toggle-button-color: black;
+  --toggle-button-color: #9c6d6d;
+  --toggle-button-border: #c4c4c4;
 }
 
 [theme='light'] {
   --background-color: #c4c4c47a;
   --color: black;
   --toggle-button-background-color: rgb(48, 48, 48);
-  --toggle-button-color: rgb(211, 209, 209);
+  --toggle-button-color: #9c6d6d;
+  --toggle-button-border: #9c6d6d;
 }
 
 * {
@@ -102,6 +104,16 @@ body {
   cursor: pointer;
   min-width: 10vh;
   min-height: 4.5vh;
+  background: transparent;
+  border: 1px solid var(--toggle-button-border);
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+.theme-toggle-button:hover,
+.unit-toggle-button:hover {
+  transition: 1s ease-in-out;
+  background: var(--toggle-button-background-color);
 }
 
 .Main {
