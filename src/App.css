@@ -213,6 +213,20 @@ form,
   height: 80%;
 }
 
+.forecast {
+  width: 60%;
+  border: 1vw solid #9c6d6d;
+  background-color: #9c6d6d7a;
+  color: #3a7758;
+  padding: 1rem;
+  /* width: 50%; */
+  height: 80%;
+  font-size: calc(0.8rem);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .Footer {
   display: flex;
   align-items: center;
