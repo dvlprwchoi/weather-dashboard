@@ -26,12 +26,12 @@ function Header({ _themeToggle, _unitToggle, isDark, isCelcious }) {
       {/* </div> */}
       <div className="toggles">
         <div className="theme-toggle">
-          <button className="theme-toggle-button" onClick={_themeToggle}>
+          <button className="theme-toggle-button button" onClick={_themeToggle}>
             {themeButtonText}
           </button>
         </div>
         <div className="unit-toggle">
-          <button className="unit-toggle-button" onClick={_unitToggle}>
+          <button className="unit-toggle-button button" onClick={_unitToggle}>
             {unitButtonText}
           </button>
         </div>
