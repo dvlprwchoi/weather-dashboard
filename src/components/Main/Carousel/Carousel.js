@@ -29,12 +29,12 @@ function Carousel({ weather, isCelcious }) {
             ></button> */}
           </div>
           <div className="carousel-inner">
-            <div className="carousel-item active">
+            <div className="carousel-item active" data-bs-interval="8000">
               {/* <div className="container"> */}
               <WeatherDetailCard weather={weather} isCelcious={isCelcious} />
               {/* </div> */}
             </div>
-            <div className="carousel-item">
+            <div className="carousel-item" data-bs-interval="8000">
               {/* <div className="container"> */}
               <Forecast weather={weather} isCelcious={isCelcious} />
               {/* </div> */}
