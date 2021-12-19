@@ -16,7 +16,7 @@ function Main({ isCelcious }) {
   const [location, setLocation] = useState([]);
 
   const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${WEATHER_API_KEY}&q=${location}&days=${forecastDays}&aqi=${airQuality}&alerts=${alerts}`;
-  console.log(API_URL);
+  // console.log(API_URL);
 
   async function getWeather() {
     try {

@@ -2,7 +2,7 @@ function Forecast({ weather, isCelcious }) {
   if (weather.length === 0) {
     return (
       <>
-        <div className="forecast">
+        <div className="no-forecast">
           <p>No result to show. Please find a city first!</p>
         </div>
       </>

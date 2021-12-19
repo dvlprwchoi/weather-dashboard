@@ -210,7 +210,8 @@ form,
 }
 
 .weather-detail-card,
-.no-alert {
+.no-alert,
+.no-forecast {
   width: 84vw;
   border: 1vw solid #9c6d6d;
   background-color: #9c6d6d7a;
