@@ -1,45 +1,20 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
 /* * {
   border: 0.1px solid black;
 } */
+
+[theme='dark'] {
+  --background-color: rgb(48, 48, 48);
+  --color: rgb(211, 209, 209);
+  --toggle-button-background-color: #c4c4c4;
+  --toggle-button-color: black;
+}
+
+[theme='light'] {
+  --background-color: #c4c4c47a;
+  --color: black;
+  --toggle-button-background-color: rgb(48, 48, 48);
+  --toggle-button-color: rgb(211, 209, 209);
+}
 
 * {
   font-family: 'Exo', sans-serif;
@@ -57,14 +32,14 @@ body {
   /* min-height: 660px; */
   padding: 0.1rem;
   border: 1vw solid #c4c4c4;
-  background-color: #c4c4c47a;
+  background-color: var(--background-color);
   /* min-height: 100vh; */
   /* display: flex; */
   /* flex-direction: column; */
   /* align-items: center; */
   /* justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color: black;
+  color: var(--color);
 }
 
 .Header {
@@ -90,6 +65,10 @@ body {
 
 .toggles {
   grid-column: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
 .app-logo {
@@ -110,10 +89,19 @@ body {
   align-items: center;
 }
 
-.theme-toggle,
+/* .theme-toggle,
 .unit-toggle {
   border: 1vw solid #9c6d6d;
   background-color: #9c6d6d7a;
+} */
+
+.theme-toggle-button,
+.unit-toggle-button {
+  background-color: var(--toggle-button-background-color);
+  color: var(--toggle-button-color);
+  cursor: pointer;
+  min-width: 10vh;
+  min-height: 4.5vh;
 }
 
 .Main {
