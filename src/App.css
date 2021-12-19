@@ -285,3 +285,111 @@ form,
 .credit-link:hover {
   text-decoration: underline;
 }
+
+@media (min-width: 800px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+  }
+
+  #root {
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .App {
+    width: 95vw;
+  }
+
+  .Main,
+  .weather-icon,
+  .temperature,
+  .location-input,
+  .carousel,
+  .weather-detail-card,
+  .forecast,
+  .alert {
+    width: 92vw;
+  }
+}
+
+@media (min-width: 860px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+  }
+
+  #root {
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .App {
+    width: 70%;
+  }
+  .Main,
+  .weather-icon,
+  .temperature,
+  .location-input,
+  .carousel,
+  .carousel-background,
+  .weather-detail-card,
+  .forecast,
+  .alert,
+  .no-forecast,
+  .no-alert {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1060px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+  }
+
+  #root {
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .App {
+    width: 50%;
+  }
+  .Main,
+  .weather-icon,
+  .temperature,
+  .location-input,
+  .carousel,
+  .carousel-background,
+  .weather-detail-card,
+  .forecast,
+  .alert,
+  .no-forecast,
+  .no-alert {
+    width: 100%;
+  }
+
+  .theme-toggle-button,
+  .unit-toggle-button,
+  .button {
+    font-size: calc(1.3rem);
+  }
+
+  .forecast,
+  .alert {
+    font-size: calc(1rem);
+  }
+}
