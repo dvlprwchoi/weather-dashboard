@@ -14,7 +14,10 @@ function Forecast({ weather, isCelcious }) {
           <div className="dayOne">
             <p>{weather.forecast.forecastday[0].date}</p>
             <p>
-              <img src={weather.forecast.forecastday[0].day.condition.icon} />
+              <img
+                src={weather.forecast.forecastday[0].day.condition.icon}
+                alt="weather-icon-img"
+              />
             </p>
             <p>{weather.forecast.forecastday[0].day.condition.text}</p>
             <p>
@@ -29,7 +32,10 @@ function Forecast({ weather, isCelcious }) {
           <div className="dayTwo">
             <p>{weather.forecast.forecastday[1].date}</p>
             <p>
-              <img src={weather.forecast.forecastday[1].day.condition.icon} />
+              <img
+                src={weather.forecast.forecastday[1].day.condition.icon}
+                alt="weather-icon-img"
+              />
             </p>
             <p>{weather.forecast.forecastday[1].day.condition.text}</p>
             <p>
@@ -44,7 +50,10 @@ function Forecast({ weather, isCelcious }) {
           <div className="dayThree">
             <p>{weather.forecast.forecastday[2].date}</p>
             <p>
-              <img src={weather.forecast.forecastday[2].day.condition.icon} />
+              <img
+                src={weather.forecast.forecastday[2].day.condition.icon}
+                alt="weather-icon-img"
+              />
             </p>
             <p>{weather.forecast.forecastday[2].day.condition.text}</p>
             <p>
@@ -66,7 +75,10 @@ function Forecast({ weather, isCelcious }) {
           <div className="dayOne">
             <p>{weather.forecast.forecastday[0].date}</p>
             <p>
-              <img src={weather.forecast.forecastday[0].day.condition.icon} />
+              <img
+                src={weather.forecast.forecastday[0].day.condition.icon}
+                alt="weather-icon-img"
+              />
             </p>
             <p>{weather.forecast.forecastday[0].day.condition.text}</p>
             <p>
@@ -81,7 +93,10 @@ function Forecast({ weather, isCelcious }) {
           <div className="dayTwo">
             <p>{weather.forecast.forecastday[1].date}</p>
             <p>
-              <img src={weather.forecast.forecastday[1].day.condition.icon} />
+              <img
+                src={weather.forecast.forecastday[1].day.condition.icon}
+                alt="weather-icon-img"
+              />
             </p>
             <p>{weather.forecast.forecastday[1].day.condition.text}</p>
             <p>
@@ -96,7 +111,10 @@ function Forecast({ weather, isCelcious }) {
           <div className="dayThree">
             <p>{weather.forecast.forecastday[2].date}</p>
             <p>
-              <img src={weather.forecast.forecastday[2].day.condition.icon} />
+              <img
+                src={weather.forecast.forecastday[2].day.condition.icon}
+                alt="weather-icon-img"
+              />
             </p>
             <p>{weather.forecast.forecastday[2].day.condition.text}</p>
             <p>
