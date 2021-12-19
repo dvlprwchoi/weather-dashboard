@@ -9,6 +9,7 @@ function LocationInput({ location, _change, _submit }) {
             placeholder="Find a city using city name or zip code"
             name="location"
             id="location"
+            autoFocus
             required
             onChange={_change}
             value={location}
@@ -16,7 +17,7 @@ function LocationInput({ location, _change, _submit }) {
         </label>
         <input
           type="submit"
-          className="locationInputSubmitButton"
+          className="locationInputSubmitButton button"
           value="Submit"
         />
       </form>

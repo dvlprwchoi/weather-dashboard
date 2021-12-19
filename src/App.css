@@ -98,7 +98,8 @@ body {
 } */
 
 .theme-toggle-button,
-.unit-toggle-button {
+.unit-toggle-button,
+.button {
   background-color: var(--toggle-button-background-color);
   color: var(--toggle-button-color);
   cursor: pointer;
@@ -111,7 +112,8 @@ body {
 }
 
 .theme-toggle-button:hover,
-.unit-toggle-button:hover {
+.unit-toggle-button:hover,
+.button:hover {
   transition: 1s ease-in-out;
   background: var(--toggle-button-background-color);
 }
