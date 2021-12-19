@@ -1,4 +1,4 @@
-function WeatherOutput({ weather }) {
+function WeatherOutput({ weather, isCelcious }) {
   if (weather.length === 0) {
     return (
       <>
@@ -16,7 +16,7 @@ function WeatherOutput({ weather }) {
         {/* </div> */}
       </>
     );
-  } else {
+  } else if (weather.length !== 0 && isCelcious === false) {
     return (
       <>
         {/* <div className="weather-output"> */}
@@ -30,6 +30,25 @@ function WeatherOutput({ weather }) {
         <div className="temperature">
           <div className="temperature-digit">
             {weather.current.temp_f + ' F'}
+          </div>
+        </div>
+        {/* </div> */}
+      </>
+    );
+  } else if (weather.length !== 0 && isCelcious === true) {
+    return (
+      <>
+        {/* <div className="weather-output"> */}
+        <div className="weather-icon">
+          <img
+            className="weather-icon-img"
+            src={weather.current.condition.icon}
+            alt="weather-icon-img"
+          />
+        </div>
+        <div className="temperature">
+          <div className="temperature-digit">
+            {weather.current.temp_c + ' C'}
           </div>
         </div>
         {/* </div> */}

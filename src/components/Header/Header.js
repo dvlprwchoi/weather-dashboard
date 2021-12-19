@@ -1,4 +1,4 @@
-function Header({ _themeToggle }) {
+function Header({ _themeToggle, _unitToggle }) {
   return (
     <div className="Header">
       {/* <div className="titleAndLogo"> */}
@@ -14,9 +14,15 @@ function Header({ _themeToggle }) {
       {/* </div> */}
       <div className="toggles">
         <div className="theme-toggle">
-          <button onClick={_themeToggle}>Theme</button>
+          <button className="theme-toggle-button" onClick={_themeToggle}>
+            Theme
+          </button>
         </div>
-        <div className="unit-toggle">C/F</div>
+        <div className="unit-toggle">
+          <button className="unit-toggle-button" onClick={_unitToggle}>
+            C/F
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -6,18 +6,29 @@ import './App.css';
 // require('dotenv').config();
 
 function App() {
+  /////////////////
+  // Theme toggle
+  /////////////////
   const [isDark, setIsDark] = useState(false);
-
   function _themeToggle() {
     setIsDark(isDark ? false : true);
   }
   // console.log(isDark);
 
+  /////////////////
+  // Unit toggle
+  /////////////////
+  const [isCelcious, setIsCelcious] = useState(false);
+  function _unitToggle() {
+    setIsCelcious(isCelcious ? false : true);
+  }
+  console.log(isCelcious);
+
   return (
     <>
       <div className="App" theme={isDark ? 'dark' : 'light'}>
-        <Header _themeToggle={_themeToggle} />
-        <Main />
+        <Header _themeToggle={_themeToggle} _unitToggle={_unitToggle} />
+        <Main isCelcious={isCelcious} />
         <Footer />
       </div>
     </>
