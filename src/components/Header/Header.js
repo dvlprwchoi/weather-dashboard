@@ -1,4 +1,16 @@
-function Header({ _themeToggle, _unitToggle }) {
+function Header({ _themeToggle, _unitToggle, isDark, isCelcious }) {
+  let themeButtonText = '';
+  if (isDark) {
+    themeButtonText = 'Light Mode';
+  } else {
+    themeButtonText = 'Dark Mode';
+  }
+  let unitButtonText = '';
+  if (isCelcious) {
+    unitButtonText = 'Fahrenheit';
+  } else {
+    unitButtonText = 'Celcious';
+  }
   return (
     <div className="Header">
       {/* <div className="titleAndLogo"> */}
@@ -15,12 +27,12 @@ function Header({ _themeToggle, _unitToggle }) {
       <div className="toggles">
         <div className="theme-toggle">
           <button className="theme-toggle-button" onClick={_themeToggle}>
-            Theme
+            {themeButtonText}
           </button>
         </div>
         <div className="unit-toggle">
           <button className="unit-toggle-button" onClick={_unitToggle}>
-            C/F
+            {unitButtonText}
           </button>
         </div>
       </div>

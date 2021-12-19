@@ -5,11 +5,15 @@
 [theme='dark'] {
   --background-color: rgb(48, 48, 48);
   --color: rgb(211, 209, 209);
+  --toggle-button-background-color: #c4c4c4;
+  --toggle-button-color: black;
 }
 
 [theme='light'] {
   --background-color: #c4c4c47a;
   --color: black;
+  --toggle-button-background-color: rgb(48, 48, 48);
+  --toggle-button-color: rgb(211, 209, 209);
 }
 
 * {
@@ -61,6 +65,10 @@ body {
 
 .toggles {
   grid-column: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
 .app-logo {
@@ -81,10 +89,19 @@ body {
   align-items: center;
 }
 
-.theme-toggle,
+/* .theme-toggle,
 .unit-toggle {
   border: 1vw solid #9c6d6d;
   background-color: #9c6d6d7a;
+} */
+
+.theme-toggle-button,
+.unit-toggle-button {
+  background-color: var(--toggle-button-background-color);
+  color: var(--toggle-button-color);
+  cursor: pointer;
+  min-width: 10vh;
+  min-height: 4.5vh;
 }
 
 .Main {

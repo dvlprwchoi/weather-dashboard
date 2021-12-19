@@ -22,12 +22,17 @@ function App() {
   function _unitToggle() {
     setIsCelcious(isCelcious ? false : true);
   }
-  console.log(isCelcious);
+  // console.log(isCelcious);
 
   return (
     <>
       <div className="App" theme={isDark ? 'dark' : 'light'}>
-        <Header _themeToggle={_themeToggle} _unitToggle={_unitToggle} />
+        <Header
+          _themeToggle={_themeToggle}
+          _unitToggle={_unitToggle}
+          isDark={isDark}
+          isCelcious={isCelcious}
+        />
         <Main isCelcious={isCelcious} />
         <Footer />
       </div>
