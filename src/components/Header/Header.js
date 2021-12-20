@@ -1,4 +1,4 @@
-function Header({ _themeToggle, _unitToggle, isDark, isCelcious }) {
+function Header({ _themeToggle, _unitToggle, isDark, isCelsius }) {
   let themeButtonText = '';
   if (isDark) {
     themeButtonText = 'Light Mode';
@@ -6,10 +6,10 @@ function Header({ _themeToggle, _unitToggle, isDark, isCelcious }) {
     themeButtonText = 'Dark Mode';
   }
   let unitButtonText = '';
-  if (isCelcious) {
-    unitButtonText = 'Fahrenheit';
+  if (isCelsius) {
+    unitButtonText = 'Fahrenheit ℉';
   } else {
-    unitButtonText = 'Celcious';
+    unitButtonText = 'Celsius ℃';
   }
   return (
     <div className="Header">

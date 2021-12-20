@@ -1,4 +1,4 @@
-function Forecast({ weather, isCelcious }) {
+function Forecast({ weather, isCelsius }) {
   if (weather.length === 0) {
     return (
       <>
@@ -7,7 +7,7 @@ function Forecast({ weather, isCelcious }) {
         </div>
       </>
     );
-  } else if (weather.length !== 0 && isCelcious === false) {
+  } else if (weather.length !== 0 && isCelsius === false) {
     return (
       <>
         <div className="forecast">
@@ -22,7 +22,7 @@ function Forecast({ weather, isCelcious }) {
             <p>{weather.forecast.forecastday[0].day.condition.text}</p>
             <p>
               Average Temp:{' '}
-              {weather.forecast.forecastday[0].day.avgtemp_f + ' F'}
+              {weather.forecast.forecastday[0].day.avgtemp_f + ' ℉'}
             </p>
             <p>
               Average Humidity:{' '}
@@ -40,7 +40,7 @@ function Forecast({ weather, isCelcious }) {
             <p>{weather.forecast.forecastday[1].day.condition.text}</p>
             <p>
               Average Temp:{' '}
-              {weather.forecast.forecastday[1].day.avgtemp_f + ' F'}
+              {weather.forecast.forecastday[1].day.avgtemp_f + ' ℉'}
             </p>
             <p>
               Average Humidity:{' '}
@@ -58,7 +58,7 @@ function Forecast({ weather, isCelcious }) {
             <p>{weather.forecast.forecastday[2].day.condition.text}</p>
             <p>
               Average Temp:{' '}
-              {weather.forecast.forecastday[2].day.avgtemp_f + ' F'}
+              {weather.forecast.forecastday[2].day.avgtemp_f + ' ℉'}
             </p>
             <p>
               Average Humidity:{' '}
@@ -68,7 +68,7 @@ function Forecast({ weather, isCelcious }) {
         </div>
       </>
     );
-  } else if (weather.length !== 0 && isCelcious === true) {
+  } else if (weather.length !== 0 && isCelsius === true) {
     return (
       <>
         <div className="forecast">
@@ -83,7 +83,7 @@ function Forecast({ weather, isCelcious }) {
             <p>{weather.forecast.forecastday[0].day.condition.text}</p>
             <p>
               Average Temp:{' '}
-              {weather.forecast.forecastday[0].day.avgtemp_c + ' C'}
+              {weather.forecast.forecastday[0].day.avgtemp_c + ' ℃'}
             </p>
             <p>
               Average Humidity:{' '}
@@ -101,7 +101,7 @@ function Forecast({ weather, isCelcious }) {
             <p>{weather.forecast.forecastday[1].day.condition.text}</p>
             <p>
               Average Temp:{' '}
-              {weather.forecast.forecastday[1].day.avgtemp_c + ' C'}
+              {weather.forecast.forecastday[1].day.avgtemp_c + ' ℃'}
             </p>
             <p>
               Average Humidity:{' '}
@@ -119,7 +119,7 @@ function Forecast({ weather, isCelcious }) {
             <p>{weather.forecast.forecastday[2].day.condition.text}</p>
             <p>
               Average Temp:{' '}
-              {weather.forecast.forecastday[2].day.avgtemp_c + ' C'}
+              {weather.forecast.forecastday[2].day.avgtemp_c + ' ℃'}
             </p>
             <p>
               Average Humidity:{' '}

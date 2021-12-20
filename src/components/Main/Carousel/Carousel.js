@@ -2,7 +2,7 @@ import WeatherDetailCard from '../WeatherDetailCard/WeatherDetailCard';
 import Forecast from '../Forecast/Forecast';
 import Alert from '../Alert/Alert';
 
-function Carousel({ weather, isCelcious }) {
+function Carousel({ weather, isCelsius }) {
   return (
     <div className="carousel">
       <div className="carousel-background">
@@ -32,12 +32,12 @@ function Carousel({ weather, isCelcious }) {
           <div className="carousel-inner">
             <div className="carousel-item active" data-bs-interval="8000">
               {/* <div className="container"> */}
-              <WeatherDetailCard weather={weather} isCelcious={isCelcious} />
+              <WeatherDetailCard weather={weather} isCelsius={isCelsius} />
               {/* </div> */}
             </div>
             <div className="carousel-item" data-bs-interval="8000">
               {/* <div className="container"> */}
-              <Forecast weather={weather} isCelcious={isCelcious} />
+              <Forecast weather={weather} isCelsius={isCelsius} />
               {/* </div> */}
             </div>
             <div className="carousel-item" data-bs-interval="8000">

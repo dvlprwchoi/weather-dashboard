@@ -11,7 +11,7 @@ const forecastDays = 3;
 const airQuality = 'yes';
 const alerts = 'yes';
 
-function Main({ isCelcious }) {
+function Main({ isCelsius }) {
   const [weather, setWeather] = useState([]);
   const [location, setLocation] = useState([]);
 
@@ -54,15 +54,13 @@ function Main({ isCelcious }) {
         <div className="temperature">
           <div className="temperature-digit">50</div>
         </div> */}
-        <WeatherOutput weather={weather} isCelcious={isCelcious} />
-        {/* <div className="location-input">Austin, TX</div> */}
+        <WeatherOutput weather={weather} isCelsius={isCelsius} />
         <LocationInput
           location={location}
           _change={_change}
           _submit={_submit}
         />
-        {/* <div className="carousel">1234</div> */}
-        <Carousel weather={weather} isCelcious={isCelcious} />
+        <Carousel weather={weather} isCelsius={isCelsius} />
       </>
     </div>
   );

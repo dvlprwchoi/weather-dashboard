@@ -18,11 +18,11 @@ function App() {
   /////////////////
   // Unit toggle
   /////////////////
-  const [isCelcious, setIsCelcious] = useState(false);
+  const [isCelsius, setIsCelsius] = useState(false);
   function _unitToggle() {
-    setIsCelcious(isCelcious ? false : true);
+    setIsCelsius(isCelsius ? false : true);
   }
-  // console.log(isCelcious);
+  // console.log(isCelsius);
 
   return (
     <>
@@ -31,9 +31,9 @@ function App() {
           _themeToggle={_themeToggle}
           _unitToggle={_unitToggle}
           isDark={isDark}
-          isCelcious={isCelcious}
+          isCelsius={isCelsius}
         />
-        <Main isCelcious={isCelcious} />
+        <Main isCelsius={isCelsius} />
         <Footer />
       </div>
     </>

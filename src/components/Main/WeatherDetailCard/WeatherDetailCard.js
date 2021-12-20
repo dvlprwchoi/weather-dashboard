@@ -1,4 +1,4 @@
-function WeatherDetailCard({ weather, isCelcious }) {
+function WeatherDetailCard({ weather, isCelsius }) {
   if (weather.length === 0) {
     return (
       <>
@@ -7,7 +7,7 @@ function WeatherDetailCard({ weather, isCelcious }) {
         </div>
       </>
     );
-  } else if (weather.length !== 0 && isCelcious === false) {
+  } else if (weather.length !== 0 && isCelsius === false) {
     return (
       <>
         <div className="weather-detail-card">
@@ -17,12 +17,12 @@ function WeatherDetailCard({ weather, isCelcious }) {
             Condition: {weather.current.condition.text}
           </div>
           <div className="feelslike">
-            Feels like: {weather.current.feelslike_f + ' F'}
+            Feels like: {weather.current.feelslike_f + ' ℉'}
           </div>
         </div>
       </>
     );
-  } else if (weather.length !== 0 && isCelcious === true) {
+  } else if (weather.length !== 0 && isCelsius === true) {
     return (
       <>
         <div className="weather-detail-card">
@@ -32,7 +32,7 @@ function WeatherDetailCard({ weather, isCelcious }) {
             Condition: {weather.current.condition.text}
           </div>
           <div className="feelslike">
-            Feels like: {weather.current.feelslike_c + ' C'}
+            Feels like: {weather.current.feelslike_c + ' ℃'}
           </div>
         </div>
       </>

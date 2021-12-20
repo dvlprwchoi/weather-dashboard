@@ -1,4 +1,4 @@
-function WeatherOutput({ weather, isCelcious }) {
+function WeatherOutput({ weather, isCelsius }) {
   if (weather.length === 0) {
     return (
       <>
@@ -16,7 +16,7 @@ function WeatherOutput({ weather, isCelcious }) {
         {/* </div> */}
       </>
     );
-  } else if (weather.length !== 0 && isCelcious === false) {
+  } else if (weather.length !== 0 && isCelsius === false) {
     return (
       <>
         {/* <div className="weather-output"> */}
@@ -29,13 +29,13 @@ function WeatherOutput({ weather, isCelcious }) {
         </div>
         <div className="temperature">
           <div className="temperature-digit">
-            {weather.current.temp_f + ' F'}
+            {weather.current.temp_f + ' ℉'}
           </div>
         </div>
         {/* </div> */}
       </>
     );
-  } else if (weather.length !== 0 && isCelcious === true) {
+  } else if (weather.length !== 0 && isCelsius === true) {
     return (
       <>
         {/* <div className="weather-output"> */}
@@ -48,7 +48,7 @@ function WeatherOutput({ weather, isCelcious }) {
         </div>
         <div className="temperature">
           <div className="temperature-digit">
-            {weather.current.temp_c + ' C'}
+            {weather.current.temp_c + ' ℃'}
           </div>
         </div>
         {/* </div> */}
