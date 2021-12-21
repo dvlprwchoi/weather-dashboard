@@ -96,7 +96,6 @@ body {
   border: 1vw solid #9c6d6d;
   background-color: #9c6d6d7a;
 } */
-
 .theme-toggle-button,
 .unit-toggle-button,
 .button {
@@ -116,6 +115,13 @@ body {
 .button:hover {
   transition: 1s ease-in-out;
   background: var(--toggle-button-background-color);
+}
+
+.theme-toggle-button,
+.unit-toggle-button {
+  min-width: 12vw;
+  min-height: 8vh;
+  font-size: calc(8px + 1vmin);
 }
 
 .Main {
@@ -142,6 +148,7 @@ body {
 .weather-icon {
   display: flex;
   align-items: flex-end;
+  padding-top: 2vw;
 }
 
 .weather-icon-img {
@@ -166,7 +173,7 @@ body {
 }
 
 .locationInputBoxAndSubmitButton {
-  width: 80%;
+  width: 90%;
   gap: 2%;
 }
 
@@ -186,6 +193,9 @@ form,
 }
 
 .locationInputSubmitButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1vw;
   font-size: calc(10px + 2vmin);
   cursor: pointer;
@@ -286,6 +296,21 @@ form,
   text-decoration: underline;
 }
 
+@media (max-width: 700px) {
+  .theme-toggle-button,
+  .unit-toggle-button {
+    min-width: 22vw;
+    min-height: 5vh;
+    font-size: calc(7px + 1vmin);
+  }
+}
+@media (max-width: 910px) {
+  .theme-toggle-button,
+  .unit-toggle-button {
+    min-width: 19vw;
+    min-height: 7vh;
+  }
+}
 @media (min-width: 800px) {
   body {
     display: flex;
