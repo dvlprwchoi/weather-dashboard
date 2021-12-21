@@ -89,6 +89,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 800;
 }
 
 /* .theme-toggle,
@@ -173,7 +174,7 @@ body {
 }
 
 .locationInputBoxAndSubmitButton {
-  width: 90%;
+  width: 89%;
   gap: 2%;
 }
 
@@ -190,6 +191,7 @@ form,
 .locationInputBox {
   padding: 1vw;
   font-size: calc(10px + 2vmin);
+  border: none;
 }
 
 .locationInputSubmitButton {
