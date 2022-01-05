@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# WEATHER DASHBOARD
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Weather Dashboard is a single page web application built with ReactJS and 3rd party weather API. A user can get weather information by typing a city name or a zip code. This app has a carousel view that displays weather detail page, 3 days forecast, and weather alert messages. This app has a mobile responsive design depends on a device's screen size. It also features toggling dark/light mode and toggling celsius/fahrenheit function.
 
-## Available Scripts
+# Previews
 
-In the project directory, you can run:
+- Different screen size view (Responsive design)
+  ![Desktop Different Screen Size](https://raw.githubusercontent.com/dvlprwchoi/weather-dashboard/main/src/img/weather-dashboard-preview-screenshot-20211219.png)
 
-### `yarn start`
+# Technologies used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- ReactJS
+- JavaScript
+- HTML
+- CSS
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Deployment
 
-### `yarn test`
+- Netlify
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Installation
 
-### `yarn build`
+Visit https://www.weatherapi.com/ and get an API key.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```shell
+Download the repo using git
+git clone https://github.com/dvlprwchoi/weather-dashboard.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Navigate into the site's directory and install dependencies.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```shell
+cd weather-dashboard
+yarn install
+```
 
-### `yarn eject`
+Create .env file in your local directory and put your API key as following code.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```shell
+REACT_APP_WEATHER_API_KEY = YOUR_API_KEY
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Start the Server.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```shell
+yarn start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Open the source code and start editing!**
+Your site is now running at `http://localhost:3000`!
 
-## Learn More
+### Links
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- GitHub URL: [Github](https://github.com/dvlprwchoi/weather-dashboard)
+- Live Site URL: [Live Site](https://woosik-weather-dashboard.netlify.app/)
